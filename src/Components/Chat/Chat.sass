@@ -1,0 +1,38 @@
+
+
+
+
+.chat
+    padding-top: 10px
+    &-block
+        display: grid
+        margin: auto
+        justify-content: center
+        grid-row-gap: 18px
+    &__window
+        border-radius: 6px
+        width: 65vw
+        border: 2px solid #fff
+        height: 73vh
+        align-self: center
+        justify-self: end
+        justify-self: center
+    &__footer
+        display: grid
+        grid-template-columns: 4fr 1fr
+        grid-column-gap: 6px
+    &__input
+        border: 3px solid #fff
+        border-radius: 6px
+        margin-bottom: 35px
+        height: 50%
+    &__btn
+        align-self: start
+        justify-self: end
+
+@media screen and (max-width: 800px)
+    .chat
+        padding-top: 10px
+        &__window
+            width: 95vw
+        

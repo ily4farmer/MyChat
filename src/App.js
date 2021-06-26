@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { HashRouter } from 'react-router-dom';
+import './App.sass';
+import Navbar from './Components/Navbar/Navbar';
+import Layout from './Components/Layout/Layout';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from './Firebase';
 
 function App() {
+  const [user, loading, error] = useAuthState(auth);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <HashRouter>
+        <Navbar user={user}/>
+        <Layout user={user} loading={loading}/>
+      </HashRouter>
   );
 }
 
