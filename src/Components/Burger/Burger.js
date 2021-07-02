@@ -33,9 +33,6 @@ export default function Burger() {
                     <Link to={chatRouter}>Чат</Link>
                 </li>
                 <li className="burger__link">
-                    <Link to={customizationRouter}>Настройки</Link>
-                </li>
-                <li className="burger__link">
                     <Link to={infoRouter}>Информация</Link>
                 </li>
             </ul>
