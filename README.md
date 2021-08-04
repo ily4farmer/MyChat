@@ -1,6 +1,6 @@
 # MyChat
 
-__GhPages__ - https://ily4farmer.github.io/MyChat/#/home
+### GhPages - https://ily4farmer.github.io/MyChat/#/home
 ---
 ## Используемые технологии
 * React / React-Hooks / React-Router-Dom
