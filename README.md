@@ -2,21 +2,21 @@
 
 __GhPages__ - https://ily4farmer.github.io/MyChat/#/home
 ---
-##Используемые технологии
+## Используемые технологии
 * React / React-Hooks / React-Router-Dom
 * Redux
 * Firebase / Firebase-Hooks
 * Rest Api
 * Sass
 ---
-##Функционал
+## Функционал
 * Регистрация с валидацией формы
 * Авторизация с сохранением после перезагрузки страницы
 * Отправка сообщений 
 * Переключение между чатом и страницей с информацией
 * Выход с последущим окончанием ссесии авторизации
 ---
-##Установка
+## Установка
 1. git clone https://github.com/ily4farmer/MyChat.git
 2. npm i
 3. npm start
