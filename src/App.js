@@ -5,11 +5,9 @@ import Navbar from './Components/Navbar/Navbar';
 import Layout from './Components/Layout/Layout';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from './Firebase';
-import Burger from './Components/Burger/Burger';
 
 function App() {
   const [user, loading, error] = useAuthState(auth);
-
 
   return (
       <HashRouter>

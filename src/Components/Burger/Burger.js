@@ -7,7 +7,7 @@ import './Burger.sass';
 import { auth } from '../../Firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { chatRouter, customizationRouter, infoRouter } from '../../Routers/Utils';
+import { chatRouter, infoRouter } from '../../Routers/Utils';
 
 export default function Burger() {
     const dispatch = useDispatch();

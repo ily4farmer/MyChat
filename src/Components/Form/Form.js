@@ -8,7 +8,7 @@ import './Form.sass';
 
 
 
-export default function Form({title, methodForm}) {
+export default function Form({title, error, setError, methodForm}) {
 
     const dispatch = useDispatch();
     const form = useSelector((state) => state.form);
@@ -16,7 +16,7 @@ export default function Form({title, methodForm}) {
     const formValidation = (e) => {
         let regexEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         let formControls = {...form};
-
+        setError('')
         switch (true) {
           case (e.target.type === 'email'):
             if (regexEmail.test( e.target.value)) {
@@ -55,6 +55,7 @@ export default function Form({title, methodForm}) {
                     );
                 })
             }
+            <div style={{color: "red", fontWeight: 600}} className="form__error">{error}</div>
             <input type="submit" placeholder="Регистрация" className="form__input-btn btn" />
         </form>
     )
