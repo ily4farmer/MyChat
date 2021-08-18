@@ -5,12 +5,12 @@
 import firebase from 'firebase'
 
 firebase.initializeApp({
-    apiKey: "AIzaSyC9e2_1CfpuDsWaCIQy9yUjEMC_P0TK1SU",
-    authDomain: "mychat10.firebaseapp.com",
-    projectId: "mychat10",
-    storageBucket: "mychat10.appspot.com",
-    messagingSenderId: "1083547048194",
-    appId: "1:1083547048194:web:adfa2968c3d5963cb78a1b"
+   apiKey: "AIzaSyCeoTy75yZWCU2guejjBXtzgK8Ysnors-E",
+    authDomain: "chatnew1-d93ff.firebaseapp.com",
+    projectId: "chatnew1-d93ff",
+    storageBucket: "chatnew1-d93ff.appspot.com",
+    messagingSenderId: "952984496977",
+    appId: "1:952984496977:web:baea3f9925386a61eb8170"
 });
 
 // модуль авторизации
